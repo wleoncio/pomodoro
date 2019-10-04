@@ -1,7 +1,9 @@
 #!/bin/bash
+
+# Functions ====================================================================
 pomodorotime () {
 	read -n1 -r -p "  Press any key to start the pomodoro number "$1""
-	icon=img/dart.png
+	icon="$scriptDir"/img/dart.png
 	sound=/usr/share/sounds/freedesktop/stereo/window-attention.oga
 	timeStart=$(date +"%T")
 	echo "  "$timeStart" OK. Started"
@@ -18,7 +20,7 @@ pomodorotime () {
 }
 
 shortbreaktime () {
-	icon=img/mug.png
+	icon="$scriptDir"/img/mug.png
 	soundStart=/usr/share/sounds/freedesktop/stereo/complete.oga
 	soundEnd=/usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
 	timeStart=$(date +"%T")
@@ -33,7 +35,7 @@ shortbreaktime () {
 }
 
 longbreaktime () {
-	icon=img/party.png
+	icon="$scriptDir"/img/party.png
 	timeStart=$(date +"%T")
 	timeEnd=$(date -d "+30 minutes" +"%T")
 	soundStart=/usr/share/sounds/freedesktop/stereo/complete.oga
@@ -49,6 +51,12 @@ longbreaktime () {
 	paplay "$soundEnd"
 }
 
+# Script execution =============================================================
+
+# Retrieving parent directory --------------------------------------------------
+scriptDir=$(dirname -- "$(readlink -f -- "$BASH_SOURCE")")
+
+# Starting pomodoros -----------------------------------------------------------
 echo "Starting 4-pomodoro set"
 echo $(date +"%T") "Starting 1st pomodoro"
 pomodorotime 1
