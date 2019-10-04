@@ -2,7 +2,7 @@
 
 This is a pomodoro timer for linux. It's based on a script created by [James Miranda](jameswpm@gmail.com), which is based on a Superuser [answer written by myself](https://superuser.com/questions/224265/pomodoro-timer-for-linux/669811#669811) back in 2013.
 
-After many years jumping from Pomodoro timer to Pomodoro timer, I decided to start using this again because I gave up trying to find a perfect solution elsewhere. Now I can't stop using this script. It may not be the best for you, but it suits my needs perfectly.
+After many years jumping from Pomodoro timer to Pomodoro timer, I decided to start using this again because I gave up trying to find a perfect solution elsewhere. Now I can't stop using this script, so I decided to continue working on it and publishing it because why not? This may not be the best pomodoro solution for you, but it suits my needs like no other competing software.
 
 # Licence
 
@@ -26,7 +26,7 @@ Make sure `pomodoro.sh` is executable (`chmod +x pomodoro.sh`), then run
 ./pomodoro.sh
 ```
 
-on your terminal and follow the prompt. You should be getting visual (notification) and audio feedback about your pomodoro and your breaks.
+on your terminal and follow the prompt. You should be getting visual (notification) and audio feedback about your pomodoro and your breaks. You can interrupt the program by pressing Ctrl+C on your terminal.
 
 # Dependencies
 
@@ -37,3 +37,5 @@ on your terminal and follow the prompt. You should be getting visual (notificati
 - Add cases for custom number of pomodoros
 - Move terminal commands to a log file
 - Improve notification timeouts so they don't jumble up
+- Add push notifications to Android
+- Replace 'xtrlock' with an uncheesable workaround
