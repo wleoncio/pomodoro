@@ -16,7 +16,7 @@ GPL-3. You can read the whole thing [here](https://www.gnu.org/licenses/gpl-3.0.
 
 # Installation
 
-Just copy everything into your folder.
+Just copy everything into a folder.
 
 # Usage
 
@@ -30,7 +30,7 @@ on your terminal and follow the prompt. You should be getting visual (notificati
 
 # Dependencies
 
-`notify-send` and `paplay`. Both are small packages which are commonly installed by default in most Linux distributions. There's also `xtrlock`, which is also easily available.
+`notify-send` and `paplay`. Both are small packages which are commonly bundled by default in most Linux distributions, so they will probably either come pre-installed or should be available in the default repository of your distro of choice. Another dependency is `xtrlock`, which is also easily available.
 
 # TODOs
 
@@ -39,4 +39,4 @@ on your terminal and follow the prompt. You should be getting visual (notificati
 - Move terminal commands to a log file
 - Improve notification timeouts so they don't jumble up
 - Add push notifications to Android
-- Replace `xtrlock` with an uncheesable solution
+- During breaks, page `xtrlock` frequently to relock in case screen was unlocked
