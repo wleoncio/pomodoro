@@ -35,6 +35,7 @@ on your terminal and follow the prompt. You should be getting visual (notificati
 # TODOs
 
 - Add cases for custom number of pomodoros
+- Add endless loop over pomodoros
 - Move terminal commands to a log file
 - Improve notification timeouts so they don't jumble up
 - Add push notifications to Android
