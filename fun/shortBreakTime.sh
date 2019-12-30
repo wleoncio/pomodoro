@@ -11,9 +11,9 @@ shortBreakTime () {
 	timeEnd=$(date -d "+5 minutes" +"%T")
 	notify-send "Short Break Start" "Come back at "$timeEnd"" -u critical -a 'Pomodoro' -i "$icon"
 	paplay "$soundStart"
-	sleep 5
+	sleep 10
 	xtrlock -f
-	sleep 290
+	sleep 285
 	pkill xtrlock
 	notify-send "Short Break Over" "Manually start your next pomodoro" -u critical -a 'Pomodoro' -i "$icon"
 	paplay "$soundEnd"  # lasts for 5 seconds
