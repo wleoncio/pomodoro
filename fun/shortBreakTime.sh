@@ -3,7 +3,7 @@
 # Storing functions for pomodoro.sh ============================================
 
 ## Function to execute short break ---------------------------------------------
-shortbreaktime () {
+shortBreakTime () {
 	icon="$scriptDir"/img/mug.png
 	soundStart=/usr/share/sounds/freedesktop/stereo/complete.oga
 	soundEnd=/usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga

@@ -3,7 +3,7 @@
 # Storing functions for pomodoro.sh ============================================
 
 ## Function to execute long break ----------------------------------------------
-longbreaktime () {
+longBreakTime () {
 	icon="$scriptDir"/img/party.png
 	timeStart=$(date +"%T")
 	timeEnd=$(date -d "+15 minutes" +"%T")
