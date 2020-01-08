@@ -11,9 +11,9 @@ longBreakTime () {
 	soundEnd=/usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
 	notify-send "Long Break Start" "Come back at "$timeEnd"" -u critical -a 'Pomodoro' -i "$icon"
 	paplay "$soundStart"
-	sleep 5
+	sleep 15
 	xtrlock -f
-	sleep 290
+	sleep 280
 	pkill xtrlock
 	sleep 600
 	notify-send "Long Break Over" "Start a new set" -u critical -a 'Pomodoro' -i "$icon"
